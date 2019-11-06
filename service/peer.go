@@ -1,9 +1,6 @@
 package service
 
 import (
-	"github.com/prometheus/client_golang/prometheus/promhttp"
-	"log"
-	"net/http"
 	"time"
 
 	"github.com/hashicorp/memberlist"
@@ -29,7 +26,7 @@ func (p *peer) Leave() {
 	}
 }
 
-func init() {
-	http.Handle("/metrics", promhttp.Handler())
-	log.Fatal(http.ListenAndServe(":8091", nil))
-}
+//func init() {
+//	http.Handle("/metrics", promhttp.Handler())
+//	log.Fatal(http.ListenAndServe(":8091", nil))
+//}
