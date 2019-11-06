@@ -1,0 +1,2 @@
+# cxhdemo
+prometheus监控golang项目的例子，包括process方面的指标
